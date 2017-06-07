@@ -9,11 +9,11 @@ defmodule GenTemplatePhoenixWebpack.Mixfile do
     { :ex_doc,         ">0.0.0",  only: [:dev, :test] },
   ]
 
-  @maintainers ["Your Name <youe@example.com>"]
-  @github      "https://github.com/•••/#{@name}"
+  @maintainers ["Cory Schmitt <cory@schmitty.me>"]
+  @github      "https://github.com/cas27/#{@name}"
 
   @description """
-  What your template does (less than 300 characters)
+  Phoenix 1.3 and Webpack 2
   """
   
   # ------------------------------------------------------------
@@ -37,7 +37,7 @@ defmodule GenTemplatePhoenixWebpack.Mixfile do
       name:        @name,
       files:       ["lib", "mix.exs", "README.md", "LICENSE.md", "template"],
       maintainers: @maintainers,
-      licenses:    ["Apache 2.0"],
+      licenses:    ["MIT"],
       links:       %{
         "GitHub" => @github,
       },
