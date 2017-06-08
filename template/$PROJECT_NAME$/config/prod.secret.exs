@@ -9,7 +9,7 @@ use Mix.Config
 # kept out of version control and might be hard to recover
 # or recreate for your teammates (or yourself later on).
 config :<%= @project_name %>, <%= @project_name_camel_case %>.Web.Endpoint,
-  secret_key_base: "sCXSDzD3a6r1HBMhhRRYj76pOEzUtanp229oESvNpNv9025VmH+tpMHoHTrAI7FR"
+  secret_key_base: "<%= :crypto.strong_rand_bytes(64) |> Base.encode64 |> binary_part(0, 64) %>"
 
 # Configure your database
 config :<%= @project_name %>, <%= @project_name_camel_case %>.Repo,
